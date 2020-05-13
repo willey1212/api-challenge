@@ -4,7 +4,7 @@
   "description": "This is the Fullstack test 1",
   "main": "index.js",
   "scripts": {
-    "test-dev": "npm test"
+    "test-dev": "jest"
   },
   "author": "",
   "license": "ISC",
