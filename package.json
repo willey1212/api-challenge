@@ -1,0 +1,19 @@
+{
+  "name": "coding-test",
+  "version": "1.0.0",
+  "description": "This is the Fullstack test 1",
+  "main": "index.js",
+  "scripts": {
+    "test-dev": "npm test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "babel": "^6.23.0",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1"
+  }
+}
