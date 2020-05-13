@@ -46,7 +46,7 @@ Queries = async (list) => {
             if(valid){
                 validList.push(e)
             } else {
-                // If invalid URL push message to response //
+                // If invalid URL push message to response array //
                 response.push({message: "invalid url"})
             }
 
@@ -60,6 +60,7 @@ Queries = async (list) => {
     // Iterate through responses //
     queries.map(e => {
 
+        // Create default entry object //
         let obj = {
             title: "",
             authors: []
@@ -121,11 +122,11 @@ Queries = async (list) => {
                     }
                 })
             } else {
-                // If invalid URL update response obj //
+                // If invalid URL update entry obj title field //
                 obj.title = "Unable to reach server"
             }
         })
-        // Push formatted response entry to response object //
+        // Push formatted entry object to response array //
         response.push(obj)
     })
     console.log(response)
